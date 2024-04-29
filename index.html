@@ -130,9 +130,7 @@
         function displayWelcomeMessage(username) {
             var output = document.createElement("div");
             output.className = "output";
-            output.innerHTML = 'Welcome, ' + username + '!';
-output.style.color = '#0f0';
-output.href = "challenge1.html";
+            output.innerHTML = '<a href="challenge1.html" style="color:#0f0;">Welcome, ' + username + '!</a>';
             document.querySelector(".terminal").appendChild(output);
             
         }
