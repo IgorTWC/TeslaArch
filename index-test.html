@@ -48,29 +48,7 @@
                 box-shadow: 0 0 0 10px rgba(0, 255, 0, 0);
             }
         }
-        a:link {
-    color: #0f0;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  a:visited {
-    color: rgb(238, 255, 0);
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: rgb(0, 0, 0);
-    background-color: #0f0;
-    text-decoration: none;
-  }
-  
-  a:active {
-    color: #0f0;
-    background-color: transparent;
-    text-decoration: none;
-  }
+
     </style>
     
 </head>
@@ -152,8 +130,9 @@
         function displayWelcomeMessage(username) {
             var output = document.createElement("div");
             output.className = "output";
-            output.innerHTML = '<a href="challenge1.html">Welcome, </a>' + username + '!';
+            output.innerHTML = '<a href="challenge1.html">Welcome, ' + username + '!</a>';
             document.querySelector(".terminal").appendChild(output);
+            output.style.color = '#0f0';
         }
 
         // Function to generate file names based on the provided text
