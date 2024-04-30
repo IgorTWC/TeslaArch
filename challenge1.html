@@ -38,6 +38,9 @@
             border-radius: 50%;
             margin-right: 5px;
         }
+        a{
+        color:#0f0;
+        }
         a:hover {
            background-color: #0f0;
            color: #000; 
@@ -55,7 +58,6 @@
         th {
             text-align: left;
     </style>
-    
     </head>
 <body>
 
@@ -112,7 +114,7 @@
     var correct = document.getElementById("correct");
     var incorrect = document.getElementById("incorrect");
     function correctAnwser() {
-        document.getElementById("display").innerHTML = '<a style="color:#0f0;" href="index.html">Continue onwards </a>';
+        document.getElementById("display").innerHTML = '<a href="index.html">Continue onwards </a>';
     }
     function incorrectAnwser() {
         document.getElementById("display").innerHTML = "Try again.";
