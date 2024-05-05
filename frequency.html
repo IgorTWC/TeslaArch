@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla-ARCH Security checkpoint</title>
+    <style>
+        body {
+    background-color: #000;
+    color: #0f0;
+    font-family: monospace;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+    background-image: url("img/bg.png");
+}
+* {
+    text-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0;
+}
+
+input,button {
+    color: #0f0;
+    background-color: #000;
+    border: 1px solid #0f0;
+    font-weight: bold;
+}
+label {
+    font-size: 120%;
+    font-weight: bold;
+}
+a{
+color:#0f0;
+}
+a:hover {
+   background-color: #0f0;
+   color: #000; 
+}
+p {
+    font-size: 130%;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+    <p>In a receiver with a resistance of 20Ω, an alternating current flows with a maximum intensity of 2.5A and a period of current change equal to 10ms. Calculate the frequency.</p>
+    <label for="answer"> > Answer here:<br>$
+        <input type="text" id="answer" name="answer"></input>
+    </label>
+    <button onclick="checkAnswer()">Send</button>
+    <div id="anwser"></div>
+</body>
+<script>
+    function checkAnswer() {
+        var userAnswer = document.getElementById("answer").value.toLowerCase(); // Get the user's answer
+        var correctAnswer = "100hz"; 
+        if (userAnswer === correctAnswer) {
+            document.getElementById("anwser").innerHTML = '<br><br><a href="index.html">> Proceed to the next problem.</a>';
+        } else {
+            document.getElementById("anwser").innerHTML = "<br><br><a>> Wrong, try again.</a>";
+        }
+    }
+</script>
+</html>

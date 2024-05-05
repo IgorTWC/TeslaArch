@@ -37,7 +37,7 @@ function typeFileNames(fileText, index, terminal) {
                 terminal.innerHTML = ""; // Clear terminal window
                 terminal.innerHTML += "<h2>Tesla-Arch v.1782.0.1</h2><br>";
                 terminal.innerHTML += "<h3>Property of: █████ ███████</h3><br><br><br>";
-                terminal.innerHTML += "Type 'login' to proceed:<br>";
+                terminal.innerHTML += "Please proceed to 'login':<br>";
                 terminal.innerHTML += "<div class='input'><span class='prompt'>$</span> <span id='userInput' contenteditable='true'></span></div>";
                 document.getElementById("userInput").focus(); // Set focus to input field
             }, 1000);

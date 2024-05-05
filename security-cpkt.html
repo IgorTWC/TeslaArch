@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla-ARCH Security checkpoint</title>
+    <style>
+        body {
+    background-color: #000;
+    color: #0f0;
+    font-family: monospace;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+    background-image: url("img/bg.png");
+}
+* {
+    text-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0;
+}
+a{
+color:#0f0;
+}
+a:hover {
+   background-color: #0f0;
+   color: #000; 
+}
+#display {
+    padding-top: 40px;
+    margin-left: 100px;
+}
+td {
+    padding-right: 10px;
+}
+table {
+    overflow: auto;
+}
+th {
+    text-align: left;
+}
+    </style>
+</head>
+<body>
+
+<div class="table-container">
+    <table>
+        <tr>
+            <th colspan="2">> The terminal seems to be secured by a password.<br>> Find the correct keyword amongst the scattered text.</th>
+        </tr>
+    <tr>
+        <tr></tr><td>
+        <span>0xFE35 <a>#</a><a>&</a><a>F</a><a onclick="incorrectAnwser()">PHYSICS</a><a>F</a><a>H</a><a>F</a></span>
+        </td>
+        <td>
+        <span>0x4AC6 <a>4</a><a>C</a><a>T</a><a>#</a><a>F</a><a>R</a><a onclick="incorrectAnwser()">PRESSURE</a></span>
+        </td></tr>
+        <tr></tr><td>
+        <span>0xGN37 <a>*</a><a>&</a><a>B</a><a>^</a><a>*</a><a>B</a><a>2</a><a onclick="incorrectAnwser()">ATOM</a><a>F</a><a>C</a></span>
+        </td>
+        <td>
+        <span>0xH3FF <a>U</a><a>C</a><a onclick="incorrectAnwser()">REFRACTION</a><a>F</a><a>#</a></span>
+        </td></tr>
+        <tr></tr><td>
+        <span>0x5TGV <a onclick="incorrectAnwser()">FRICTION</a><a>#</a><a>&</a><a>^</a><a>@</a><a>H</a></span>
+        </td>
+        <td>
+        <span>0xSLFI <a>^</a><a>C</a><a>X</a><a onclick="incorrectAnwser()">ENERGY</a><a>#</a><a>3</a><a>5</a><a>6</a><a>%</a></span>
+        </td></tr>
+        <tr></tr><td>
+        <span>0xSG0P <a>F</a><a>X</a><a>6</a><a onclick="incorrectAnwser()">RELATIVITY</a></span>
+        </td>
+        <td>
+        <span>0xXH3R <a>3</a><a>C</a><a>7</a><a onclick="incorrectAnwser()">MOMENTUM</a><a>#</a><a>B</a><a>J</a></span>
+        </td></tr>
+        <tr></tr><td>
+        <span>0xHS62 <a>A</a><a>&</a><a>F</a><a>F</a><a>F</a><a>F</a><a onclick="incorrectAnwser()">PHOTONS</a></span>
+        </td>
+        <td>
+        <span>0xAY02 <a>6</a><a>C</a><a>%</a><a onclick="correctAnwser()">TESLA</a><a>;</a><a>B</a><a>:</a><a>}</a><a>C</a><a>6</a></span>
+        </td></tr>
+        <tr></tr><td>
+            <span>0x226S <a>></a><a>3</a><a onclick="incorrectAnwser()">GRAVITY</a><a>C</a><a>7</a><a>\</a><a>^</a></span>
+            </td>
+            <td>
+            <span>0xAHC2 <a>@</a><a>C</a><a>!</a><a>@</a><a>V</a><a onclick="incorrectAnwser()">ENERGY</a><a>%</a><a>2</a><a>A</a></span>
+            </td></tr>                                         
+    </tr>
+
+
+</table>
+<div id="display"></div>
+</div>
+
+<script>
+    var correct = document.getElementById("correct");
+var incorrect = document.getElementById("incorrect");
+function correctAnwser() {
+    document.getElementById("display").innerHTML = '<a style="color:#0f0;" href="diagram.html">Continue onwards </a>';
+}
+function incorrectAnwser() {
+    document.getElementById("display").innerHTML = "Try again.";
+}
+</script>
+
+</body>
+</html>
