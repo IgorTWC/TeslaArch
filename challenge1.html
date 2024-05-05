@@ -57,7 +57,16 @@
 <div id="display"></div>
 </div>
 
-<script src="https://raw.githubusercontent.com/Xortfo/TeslaArch/main/js/script2.js"></script>
+<script>
+    var correct = document.getElementById("correct");
+var incorrect = document.getElementById("incorrect");
+function correctAnwser() {
+    document.getElementById("display").innerHTML = '<a style="color:#0f0;" href="index.html">Continue onwards </a>';
+}
+function incorrectAnwser() {
+    document.getElementById("display").innerHTML = "Try again.";
+}
+</script>
 
 </body>
 </html>
