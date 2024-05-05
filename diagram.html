@@ -19,7 +19,7 @@
 }
 body {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 input,button {
     color: #0f0;
@@ -36,6 +36,8 @@ input {
 #diagram{
     width: 40%;
     padding-left: 80px;
+    margin-top: -40px;
+    margin-bottom: -20px;
 }
 label {
     font-size: 120%;
@@ -57,15 +59,15 @@ p {
 
 <body>
     <div id="question">
-        <p>The following diagram shows a certain electrical circuit. Calculate what the reading on the ammeter should be if the resistance of the light bulb is 17Ω (round the result to two decimal places).</p><br>
-        <label for="answer"> > Answer here:<br>$
-            <input type="text" id="answer" name="answer"></input>
-        </label>
-        <button onclick="checkAnswer()">Send</button>
-        <div id="comment"></div>
-    </div>
+        <p>The following diagram shows a certain electrical circuit. Calculate what the reading on the ammeter should be if the resistance of the light bulb is 17Ω (round the result to two decimal places).</p>
     <div id="diagram">
         <img src="img/diagram.png" width="250px">
+    </div>
+    <label for="answer"> > Answer here:<br>$
+        <input type="text" id="answer" name="answer"></input>
+    </label>
+    <button onclick="checkAnswer()">Send</button>
+    <div id="comment"></div>
     </div>
     <script>
         function checkAnswer() {
