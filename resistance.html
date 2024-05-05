@@ -43,9 +43,11 @@ p {
 </head>
 
 <body>
-    <p>In a receiver with a resistance of 20Ω, an alternating current flows with a maximum intensity of 2.5A and a period of current change equal to 10ms. Calculate the frequency.</p>
+    <p>The device is connected to an alternating current network with an effective voltage of 230V. Calculate the electrical resistance of this device if a current flows through it, with a maximum intensity of 5.6A (round the result to the nearest whole number).
+
+        Note: Is = I0 / √2</p>
     <label for="answer"> > Answer here:<br>$
-        <input type="text" id="answer" name="answer"></input>
+        <input type="text" id="answer" name="answer"></input> Ω
     </label>
     <button onclick="checkAnswer()">Send</button>
     <div id="anwser"></div>
@@ -53,9 +55,9 @@ p {
 <script>
     function checkAnswer() {
         var userAnswer = document.getElementById("answer").value.toLowerCase(); // Get the user's answer
-        var correctAnswer = "100hz"; 
+        var correctAnswer = "58"; 
         if (userAnswer === correctAnswer) {
-            document.getElementById("anwser").innerHTML = '<br><br><a href="resistance.html">> Proceed to the next problem.</a>';
+            document.getElementById("anwser").innerHTML = '<br><br><a href="end.html">> Proceed to the next problem.</a>';
         } else {
             document.getElementById("anwser").innerHTML = "<br><br><a>> Wrong, try again.</a>";
         }
