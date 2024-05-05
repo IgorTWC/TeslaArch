@@ -35,6 +35,8 @@ function typeFileNames(fileText, index, terminal) {
             // After typing the drive text, clear the terminal and show input field
             setTimeout(function() {
                 terminal.innerHTML = ""; // Clear terminal window
+                terminal.innerHTML += "<h2>Tesla-Arch v.1782.0.1</h2><br>";
+                terminal.innerHTML += "<h3>Property of: █████ ███████</h3><br><br><br>";
                 terminal.innerHTML += "Type 'login' to proceed:<br>";
                 terminal.innerHTML += "<div class='input'><span class='prompt'>$</span> <span id='userInput' contenteditable='true'></span></div>";
                 document.getElementById("userInput").focus(); // Set focus to input field
@@ -53,7 +55,7 @@ function handleUserInput(event) {
         output.className = "output";
         if (userInput.toLowerCase() === "login") {
             loggedIn = true;
-            output.innerHTML = "> Enter your username:";
+            output.innerHTML = "> Enter your class:";
             document.getElementById("userInput").textContent = ""; // Clear input field
         } else {
             output.innerHTML = "> Invalid command.";
