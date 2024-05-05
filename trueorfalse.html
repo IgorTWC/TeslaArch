@@ -21,7 +21,7 @@ input,button,input[type='radio']:after{
     color: #0f0;
     background-color: #000;
     border: 1px solid #0f0;
-    font-weight: bold;
+    font-family: monospace;
     accent-color: #0f0;
 }
 button {
@@ -46,6 +46,7 @@ th{
     font-size: 120%;
     text-align: left;
     padding-top: 20px;
+    font-weight: 100;
 }
 td {
     font-size: 160%;
@@ -62,7 +63,7 @@ a:hover {
 label {
     font-size: 140%;
 }
-p {
+#quest {
     font-size: 130%;
     font-weight: bold;
 }
@@ -70,6 +71,7 @@ p {
 </head>
 
 <body>
+    <p id="quest">> Further into the depths of the archive, they confront statements veiled in ambiguity, challenging their understanding of electrical currents. With cautious scrutiny, they evaluate each assertion, distinguishing truth from falsehood. Alternating currents dance through their minds, their understanding sharpened with each revelation.</p>
     <p>Evaluate the truthfulness of the following statements. Indicate T if the sentence is true, or F if it is false.</p><br>
     <table>
         <th colspan="2"> > A current whose intensity is a sinusoidal function of time is called an alternating current.</th>
@@ -81,7 +83,7 @@ p {
                 <input type="radio" name="q1" value="F">F
             </td>
         </tr>
-        <th colspan="2"> A current whose direction changes over time while the value remains constant is an example of an alternating current.</th>
+        <th colspan="2">> A current whose direction changes over time while the value remains constant is an example of an alternating current.</th>
         <tr>
             <td>
                 <input type="radio" name="q2" value="T">T
